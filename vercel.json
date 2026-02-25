@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/api/predict", "destination": "/api/predict" }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/predict.js": {
+      "runtime": "@vercel/node@3"
+    }
+  }
 }
